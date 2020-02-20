@@ -57,13 +57,15 @@ puts mesinku.duration
 
 puts "==========="
 class MesinPencetak
-attr_reader :text
+attr_reader :text, :duration
+attr_reader :text, :duration
 
 def initialize(text)
     @text = text
+    @duration = duration
 end
 def cetak 
-"Hari ini saya belajar method #{@text}"
+puts "Hari ini saya belajar method #{@text}"
 end
 def text=(text)
 @text = text
@@ -78,5 +80,12 @@ puts mesinku.cetak
 
 
 
+puts "======"
+def bagi(a,b)
+	begin
+	hasil = a/b
+	rescue => 
+end
+end
 
 
